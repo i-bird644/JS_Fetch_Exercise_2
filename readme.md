@@ -48,6 +48,6 @@ Create HTML elements to contain the information and add them to the DOM. You'll 
 
 Lastly, you'll need to invoke this `displayUser` function at the right time
 
-1. You can only show a user's data on the screen once you *have* a user's data. So, back in the `getUserData` function, inside the callback function of the **second** `.then()` method, invoke the function: `displayUser(data);`
+1. You can only show a user's data on the screen once you *have* a user's data. So, back in the `getUserData` function, inside the callback function of the **second** `.then()` method, invoke the function: `displayUser(data.results[0]);`
 
 Now all the pieces of our code should be tied together, and hopefully, you'll see the user's data on your webpage.
